@@ -11,7 +11,7 @@ const News = ({ count }) => {
     return <Loader />;
   }
   const datac = data?.data;
-  const datad = datac.slice(0, count || 50);
+  const datad = datac ? datac.slice(0, count || 50) : [];
   console.log(data);
 
   return (
@@ -20,7 +20,7 @@ const News = ({ count }) => {
       <h1 className="text-4xl w-full font-semibold mb-4 ">
         Top Crypto News In The World
       </h1>
-      <div className="flex flex-wrap gap-7 ">
+      <div className="flex flex-wrap gap-7  ">
         {datad.map((d) => (
           <NewsCard data1={d} />
         ))}

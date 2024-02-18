@@ -9,7 +9,7 @@ const Layout = () => {
         {" "}
         <Navbar />
       </div>
-      <div className=" flex-[0.8] border max-md:ml-[60px] z-0 ">
+      <div className=" flex-[0.8] border max-[500px]:ml-[50px]  max-md:ml-[180px] max-md:flex-[1] z-0 ">
         {" "}
         <Outlet />
       </div>

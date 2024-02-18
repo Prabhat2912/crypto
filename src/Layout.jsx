@@ -5,11 +5,11 @@ import Footer from "./components/Footer";
 const Layout = () => {
   return (
     <div className="flex overflow-hidden h-[100vh] relative ">
-      <div className="flex-[0.2] sticky left-0  max-md:flex-1 z-10 ">
+      <div className="flex-[0.2] sticky left-0  max-md:flex-1 z-10 max-md:fixed  ">
         {" "}
         <Navbar />
       </div>
-      <div className=" flex-[0.8] border relative z-0 ">
+      <div className=" flex-[0.8] border max-md:ml-16 z-0 ">
         {" "}
         <Outlet />
       </div>

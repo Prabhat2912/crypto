@@ -4,12 +4,12 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 const Layout = () => {
   return (
-    <div className="flex overflow-hidden h-[100vh] ">
-      <div className="flex-[0.2] sticky left-0  ">
+    <div className="flex overflow-hidden h-[100vh] relative ">
+      <div className="flex-[0.2] sticky left-0  max-md:flex-1 z-10 max-md:w-[50px] ">
         {" "}
         <Navbar />
       </div>
-      <div className=" flex-[0.8] border  ">
+      <div className=" flex-[0.8] border relative z-0 ">
         {" "}
         <Outlet />
       </div>

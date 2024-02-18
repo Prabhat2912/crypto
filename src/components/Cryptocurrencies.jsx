@@ -24,7 +24,7 @@ const Cryptocurrencies = ({ count }) => {
 
   return (
     <div className="flex flex-col h-full overflow-auto p-2 ">
-      <div className="flex justify-between mb-4 ">
+      <div className="flex justify-between mb-4 gap-2 flex-wrap ">
         {" "}
         <div className=" w-1/2 flex justify-center">
           <input
@@ -32,7 +32,7 @@ const Cryptocurrencies = ({ count }) => {
             placeholder="Search Cryptocurrency"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full placeholder:text-balance px-4 py-2 rounded-2xl outline-none bg-gray-50 border-2"
+            className="w-full placeholder:overflow-hidden px-4 py-2 rounded-2xl outline-none bg-gray-50 border-2"
           />
         </div>
         <div className="flex justify-end items-center">

@@ -23,9 +23,11 @@ const Homepage = () => {
 
   return (
     <div className="  flex flex-col w-full h-[100%] overflow-auto bg-gray-50 ">
-      <h1 className="text-4xl font-semibold mb-4 p-2 ">Global Crypto Stats</h1>
-      <div className="flex flex-row flex-wrap p-1 w-full ">
-        <div className="w-1/2 ">
+      <h1 className="text-4xl font-semibold mb-4 px-4 py-2 ">
+        Global Crypto Stats
+      </h1>
+      <div className="flex flex-row flex-wrap px-1 w-full ">
+        <div className="w-1/2 px-3 ">
           <div className="mb-10">
             <h1 className="text-gray-500 font-medium ">
               Total CryptoCurrencies
@@ -54,7 +56,7 @@ const Homepage = () => {
             </h1>
           </div>
         </div>
-        <div className="w-1/2  ">
+        <div className="w-1/2  px-3 ">
           <div className="mb-10">
             <h1 className="text-gray-500 font-medium ">Total Exchanges</h1>
 
@@ -82,8 +84,8 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col w-full ">
-          <div className="flex justify-between  ">
+        <div className="flex flex-col w-full  ">
+          <div className="flex justify-between px-3 ">
             <h1 className="text-4xl font-semibold mb-4 ">
               Top 10 Cryptos In The World
             </h1>

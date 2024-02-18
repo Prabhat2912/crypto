@@ -38,7 +38,7 @@ const Cryptocurrencies = ({ count }) => {
         <div className="flex justify-end items-center">
           {count ? (
             <button
-              className="text-blue-600 font-medium"
+              className="text-blue-600 mr-6 font-medium"
               onClick={() => setbtnclc(!btnclc)}
             >
               {btnclc ? "Show less" : "Show more"}

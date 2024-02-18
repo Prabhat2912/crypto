@@ -8,7 +8,6 @@ import HTMLReactParser from "html-react-parser";
 
 import { AiFillDollarCircle } from "react-icons/ai";
 import { FaRankingStar } from "react-icons/fa6";
-import { AiFillThunderbolt } from "react-icons/ai";
 import { FaTrophy } from "react-icons/fa";
 import { RiFundsBoxFill } from "react-icons/ri";
 import { BsCurrencyExchange } from "react-icons/bs";
@@ -29,10 +28,6 @@ const Cryptodetails = () => {
   }
 
   const cryptoDetails = data?.data?.coin;
-
-  // const volume = cryptoDetails ? .24hVolume;
-  // const volume = cryptoDetails ? cryptoDetails["24hVolume"] : null;
-  // const volume = cryptoDetails ? cryptoDetails.24hVolume : null;
 
   const stats = [
     {

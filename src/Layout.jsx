@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 const Layout = () => {
   return (
     <div className="flex overflow-hidden h-[100vh] relative ">
-      <div className="flex-[0.2] sticky left-0  max-md:flex-1 z-10 max-md:w-[50px] ">
+      <div className="flex-[0.2] sticky left-0  max-md:flex-1 z-10 ">
         {" "}
         <Navbar />
       </div>

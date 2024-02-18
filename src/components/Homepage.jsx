@@ -26,8 +26,8 @@ const Homepage = () => {
       <h1 className="text-4xl font-semibold mb-4 px-4 py-2 ">
         Global Crypto Stats
       </h1>
-      <div className="flex flex-row flex-wrap px-1 w-full ">
-        <div className="w-1/2 px-3 ">
+      <div className="flex flex-row flex-wrap px-1 w-full justify-between ">
+        <div className="w-1/2 min-w-[300px] px-3 ">
           <div className="mb-10">
             <h1 className="text-gray-500 font-medium ">
               Total CryptoCurrencies
@@ -56,7 +56,7 @@ const Homepage = () => {
             </h1>
           </div>
         </div>
-        <div className="w-1/2  px-3 ">
+        <div className="w-1/2 min-w-[300px] px-3 ">
           <div className="mb-10">
             <h1 className="text-gray-500 font-medium ">Total Exchanges</h1>
 

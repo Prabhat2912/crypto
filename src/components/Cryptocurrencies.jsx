@@ -48,7 +48,7 @@ const Cryptocurrencies = ({ count }) => {
           )}
         </div>
       </div>
-      <div className="flex gap-7 flex-wrap">
+      <div className="flex gap-7 flex-wrap max-md:justify-evenly ">
         {displayCoins.map((coin) => (
           <Card key={coin.rank} data={coin} />
         ))}

@@ -3,11 +3,11 @@ import "./App.css";
 import { Route, Link } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Homepage from "./components/Homepage";
-import Exchanges from "./components/Exchanges";
-import News from "./components/News";
-import Cryptocurrencies from "./components/Cryptocurrencies";
-import Cryptodetails from "./components/Cryptodetails";
+import Homepage from "./components/Homepage.jsx";
+import Exchanges from "./components/Exchanges.jsx";
+import News from "./components/News.jsx";
+import Cryptocurrencies from "./components/Cryptocurrencies.jsx";
+import Cryptodetails from "./components/Cryptodetails.jsx";
 
 import {
   RouterProvider,

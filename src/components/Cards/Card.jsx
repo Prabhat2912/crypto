@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Card = ({ data }) => {
   return (
     <Link
-      to={`/crypto-details/${data.uuid}` || data.coinrankingUrl}
+      to={data.coinrankingUrl || `/crypto-details/${data.uuid}`}
       target="blank"
     >
       <div className="flex flex-col px-4 py-3 border w-[287px] hover:transform hover:scale-105 transition-transform duration-300 ease-in-out rounded-lg bg-white shadow-sm h-[250px] ">

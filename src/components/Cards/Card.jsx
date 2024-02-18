@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Card = ({ data }) => {
   return (
     <Link to={`/crypto-details/${data.uuid}`}>
-      <div className="flex flex-col px-4 py-3 border w-[287px] hover:transform hover:scale-105 transition-transform duration-300 ease-in-out rounded-lg bg-white shadow-sm h-[250px] ">
+      <div className="flex flex-col px-4 py-3 border w-[270px] hover:transform hover:scale-105 transition-transform duration-300 ease-in-out rounded-lg bg-white shadow-sm h-[250px] ">
         <div
           className="flex
            justify-between mb-4 py-1 shadow-sm "

@@ -92,8 +92,8 @@ const Homepage = () => {
             <Cryptocurrencies count={10} />
           </div>
         </div>
-        <div className="flex flex-col w-full mt-4 ">
-          <News count={4} />
+        <div className="flex overflow-hidden flex-col w-full mt-4 ">
+          <News count={5} />
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 import Card from "./Cards/Card";
 import Loader from "./Loader";
 
-const Cryptocurrencies = () => {
+const Cryptocurrencies = ({ count }) => {
   const [btnclc, setbtnclc] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const { data, isFetching } = useGetCryptosQuery();
@@ -12,11 +12,15 @@ const Cryptocurrencies = () => {
   const filteredCoins = coins.filter((coin) =>
     coin.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
-  const displayCoins = btnclc ? filteredCoins : filteredCoins.slice(0, 10);
+  const displayCoins = btnclc
+    ? filteredCoins
+    : filteredCoins.slice(0, count || 50);
 
   if (isFetching) {
     return <Loader />;
   }
+
+  console.log(data);
 
   return (
     <div className="flex flex-col h-full overflow-auto p-2 ">
@@ -32,12 +36,16 @@ const Cryptocurrencies = () => {
           />
         </div>
         <div className="flex justify-end items-center">
-          <button
-            className="text-blue-600 font-medium"
-            onClick={() => setbtnclc(!btnclc)}
-          >
-            {btnclc ? "Show less" : "Show more"}
-          </button>
+          {count ? (
+            <button
+              className="text-blue-600 font-medium"
+              onClick={() => setbtnclc(!btnclc)}
+            >
+              {btnclc ? "Show less" : "Show more"}
+            </button>
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <div className="flex gap-3 flex-wrap">

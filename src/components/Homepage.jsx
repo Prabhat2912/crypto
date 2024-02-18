@@ -24,7 +24,7 @@ const Homepage = () => {
   return (
     <div className="  flex flex-col w-full h-[100%] overflow-auto bg-gray-50 ">
       <h1 className="text-4xl font-semibold mb-4 p-2 ">Global Crypto Stats</h1>
-      <div className="flex flex-row flex-wrap p-2 w-full ">
+      <div className="flex flex-row flex-wrap p-1 w-full ">
         <div className="w-1/2 ">
           <div className="mb-10">
             <h1 className="text-gray-500 font-medium ">
@@ -89,7 +89,7 @@ const Homepage = () => {
             </h1>
           </div>
           <div>
-            <Cryptocurrencies />
+            <Cryptocurrencies count={10} />
           </div>
         </div>
         <div className="flex flex-col w-full mt-4 ">
